@@ -1,0 +1,50 @@
+node -v
+npm -v
+
+npm install -g typescript
+
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+PS C:\Users\Rendszergazda> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+
+Execution Policy Change
+The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose
+you to the security risks described in the about_Execution_Policies help topic at
+https:/go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy?
+[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): A
+PS C:\Users\Rendszergazda> tsc -v
+Version 5.6.2
+
+tsc -v
+
+cd 01 | belép a mappába
+
+tsc .\main.ts -w    | vagy tsc main.ts
+
+main.js-t ne nyissuk meg! | müködik de alá lesz húzva, zavaró
+
+megszaktani a futást: ctrl+c
+
+
+
+cd.. | visszalép a mappából	
+mkdir 02 -terminálból új mappa létrehozása
+cd 02
+
+
+
+
+npm install -g browserify |-export, import miatt kell
+
+npm init
+name: csomag |barmi lehet a neve
+enter vegig, ok?: yes |létrehozza
+
+
+
+
+npm install tsify -save-dev |dev dependencies (sima dependencies meg nincs mivel globalisan telepitettuk a ts-t es nincs hozza rakva
+npm install typescript -save-dev |ts veryio megjelent (innentol kezdbve fileba irva tudunk telepiteni pl bootstrapet
+
+browserify main.ts p [tsify --noInplicitiAny] > bundle.js |ez után a bundle.js a html script src-be. | mindig le kell futtatni ha valami változik a kódban.
