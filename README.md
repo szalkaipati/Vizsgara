@@ -5,7 +5,7 @@ https://developer.mozilla.org/en-US/docs/Web/HTTP
 - npm i -g @angular/cli   Ha problémát jelez akkor álltakában ha rendszergazdaként futtatva powershellbe beírod ezt: Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser , (vagy ennek a variacioit) megoldjak a hibát.
 - ng new [projekt neve]
 - utána: no
-- css ENTERT KELL NYOMNI
+- css  | entert kell nyomni
 - utána: no
 - futtatas: npm start
 vagy npm run dev
